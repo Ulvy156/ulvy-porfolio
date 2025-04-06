@@ -20,8 +20,3 @@ import NavbarMobile from './NavbarMobile.vue';
 
 </script>
 
-<style scoped>
-/* nav {
-  background-image: var(--bg-color);
-} */
-</style>

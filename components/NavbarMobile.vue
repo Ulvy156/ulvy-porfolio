@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-between text-white p-3 border-b border-gray-500 sticky top-0 z-50 lg:hidden md:hidden">
+  <nav class="flex justify-between text-white p-3 border-b border-gray-500 sticky top-0 z-50 lg:hidden md:hidden backdrop-blur-md">
     <h1 class="text-2xl ">Ulvy</h1>
     <svg xmlns="http://www.w3.org/2000/svg" @click="drawer = true" class="size-7" viewBox="0 0 32 32">
       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -34,9 +34,3 @@ const drawer = ref<boolean>(false);
 
 </script>
 
-<style scoped>
-nav {
-  background-image: var(--bg-color);
-}
-
-</style>
