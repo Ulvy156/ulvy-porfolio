@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="flex items-baseline w-1/3  border-2 rounded-full">
-      <img src="~/public/assets/profile.jpg" class="relative object-cover rounded-full" alt="profile picture">
+      <NuxtImg src="/assets/profile.jpg" class="relative object-cover rounded-full" width="500" height="500" alt="profile picture"/>
       <!-- <img src="~/public/assets/programming.svg"  alt="profile picture"> -->
        <!-- <div v-html="profile"></div> -->
     </div>
@@ -27,7 +27,9 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title:"Home"
+})
 </script>
 
 <style scoped>

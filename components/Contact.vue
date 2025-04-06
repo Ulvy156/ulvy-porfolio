@@ -36,7 +36,7 @@
             </div>
             <div class="grid grid-cols-1 gap-5">
                 <div class="flex gap-x-2 items-center mt-5 text-3xl">
-                    <p>Reach out me on socials</p>
+                    <p>Reach out me via socials media</p>
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 48 48">
                         <defs>
                             <mask id="ipTHandDown0">
@@ -124,6 +124,9 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title:"Contact"
+})
 // const inputValue = ref<string>('')
 // const message = ref<string>("")
 

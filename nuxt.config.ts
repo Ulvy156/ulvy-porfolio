@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   css: ['@/public/assets/css/main.css'],
-  modules: ['@element-plus/nuxt'],
+  modules: ['@element-plus/nuxt','@nuxt/image'],
   vite: {
     plugins: [
       tailwindcss(),

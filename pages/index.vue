@@ -2,6 +2,7 @@
   <section class="my-10 grid grid-cols-1 gap-10">
     <GetInTouch/>
     <Introduct/>
+    <Educations/>
     <SkillsTools/>
     <FeatureProjects/>
     <Contact/>
@@ -14,5 +15,6 @@ import Introduct from '~/components/Introduct.vue';
 import SkillsTools from '~/components/SkillsTools.vue';
 import FeatureProjects from '~/components/FeatureProjects.vue';
 import Contact from '~/components/Contact.vue';
+import Educations from '~/components/Educations.vue';
 </script>
 

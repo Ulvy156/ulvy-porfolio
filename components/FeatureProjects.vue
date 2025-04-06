@@ -15,14 +15,14 @@
             </div>
             <div class="grid grid-cols-1 gap-5">
                 <div class="flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-7 text-[#646363]" viewBox="0 0 48 48"><defs><mask id="ipSCheckOne0"><g fill="none" stroke-linejoin="round" stroke-width="3"><path fill="#fff" stroke="#fff" d="M24 44a19.94 19.94 0 0 0 14.142-5.858A19.94 19.94 0 0 0 44 24a19.94 19.94 0 0 0-5.858-14.142A19.94 19.94 0 0 0 24 4A19.94 19.94 0 0 0 9.858 9.858A19.94 19.94 0 0 0 4 24a19.94 19.94 0 0 0 5.858 14.142A19.94 19.94 0 0 0 24 44Z"/><path stroke="#000" stroke-linecap="round" d="m16 24l6 6l12-12"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSCheckOne0)"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-7 " viewBox="0 0 48 48"><defs><mask id="ipSCheckOne0"><g fill="none" stroke-linejoin="round" stroke-width="3"><path fill="#fff" stroke="#fff" d="M24 44a19.94 19.94 0 0 0 14.142-5.858A19.94 19.94 0 0 0 44 24a19.94 19.94 0 0 0-5.858-14.142A19.94 19.94 0 0 0 24 4A19.94 19.94 0 0 0 9.858 9.858A19.94 19.94 0 0 0 4 24a19.94 19.94 0 0 0 5.858 14.142A19.94 19.94 0 0 0 24 44Z"/><path stroke="#000" stroke-linecap="round" d="m16 24l6 6l12-12"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSCheckOne0)"/></svg>
                     <h3>{{project.title}}</h3>
                 </div>
                 <p class="font-light">{{project.description}}</p>
-                <div class="flex flex-wrap gap-3">
+                <article class="flex flex-wrap gap-3">
                     <p v-for="tag in project.tags" :key="tag"
                     class="bg-[#575656] px-3 py-2 rounded-full w-fit flex justify-center items-center">{{ tag }}</p>
-                </div>
+                </article>
             </div>
             <div class="flex items-center gap-x-2">
                 <p>View details</p>
@@ -34,7 +34,9 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title:"Project Experienced"
+})
 const projects = readonly([
     {
         title: "Official Company Website",
@@ -55,6 +57,20 @@ const projects = readonly([
         description: "Built a custom Disbursement System to manage loan releases.",
         tags: ["Vue JS", "Laravel", "Tailwind CSS","Element Plus","MS Sql Server"],
         svg: `<svg xmlns="http://www.w3.org/2000/svg" class="size-10 text-white" viewBox="0 0 512 512"><path fill="currentColor" d="m356.687 228.687l22.626 22.626L494.627 136L379.313 20.687l-22.626 22.626L433.372 120H16v32h417.372zM496 360H78.628l76.685-76.687l-22.626-22.626L17.373 376l115.314 115.313l22.626-22.626L78.628 392H496z" stroke-width="13" stroke="currentColor"/></svg>`,
+        link: "https://example.com",
+    },
+    {
+        title: "Job Seeker Web App.",
+        description: "Built a Job Seeker Web Application for candidate to find a job and recruiter to find candidate.",
+        tags: ["Vue JS", "Laravel", "Tailwind CSS","Element Plus"],
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" class='size-9' viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M11.007 21H9.605c-3.585 0-5.377 0-6.491-1.135S2 16.903 2 13.25s0-5.48 1.114-6.615S6.02 5.5 9.605 5.5h3.803c3.585 0 5.378 0 6.492 1.135c.857.873 1.054 2.156 1.1 4.365"/><path d="M17.111 13.255c.185-.17.277-.255.389-.255s.204.085.389.255l.713.657c.086.079.129.119.182.138c.054.02.112.018.23.013l.962-.038c.248-.01.372-.014.457.057s.102.194.135.44l.132.986c.016.114.023.17.051.22c.028.048.073.083.163.154l.776.61c.192.152.288.227.307.335s-.046.212-.174.42l-.526.847c-.06.097-.09.146-.1.2s.002.111.026.223l.209.978c.05.24.076.36.021.456s-.172.134-.405.21l-.926.301c-.11.036-.166.054-.209.09c-.043.037-.07.089-.123.192l-.452.871c-.115.223-.173.334-.278.372s-.22-.01-.452-.106l-.888-.368c-.109-.045-.163-.068-.22-.068s-.111.023-.22.068l-.888.368c-.232.096-.347.144-.452.106s-.163-.15-.278-.372l-.452-.871c-.054-.103-.08-.155-.123-.191s-.099-.055-.209-.09l-.926-.302c-.233-.076-.35-.114-.405-.21s-.03-.215.021-.456l.21-.978c.023-.112.035-.168.025-.222a.6.6 0 0 0-.1-.2l-.525-.848c-.13-.208-.194-.312-.175-.42s.115-.183.307-.334l.776-.61c.09-.072.135-.107.163-.156s.035-.105.05-.22l.133-.985c.033-.245.05-.369.135-.44s.209-.067.457-.057l.963.038c.117.005.175.007.229-.013c.053-.02.096-.059.182-.138zM16 5.5l-.1-.31c-.495-1.54-.742-2.31-1.331-2.75C13.979 2 13.197 2 11.63 2h-.263c-1.565 0-2.348 0-2.937.44c-.59.44-.837 1.21-1.332 2.75L7 5.5"/></g></svg>`,
+        link: "https://example.com",
+    },
+    {
+        title: "Loan Delinquency System",
+        description: "A robust system built to track and manage loan delinquencies.",
+        tags: ["Vue JS", "Laravel", "Tailwind CSS","Element Plus","MS Sql Server","Linux"],
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" class='size-9' viewBox="0 0 32 32"><path fill="currentColor" d="m15 22l-1.41 1.41L16.17 26H4V8H2v18c0 1.103.897 2 2 2h12.17l-2.58 2.59L15 32l5-5z" stroke-width="1" stroke="currentColor"/><circle cx="11" cy="16" r="1" fill="currentColor" stroke-width="1" stroke="currentColor"/><path fill="currentColor" d="M24 20H8c-1.103 0-2-.897-2-2v-4c0-1.103.897-2 2-2h16c1.103 0 2 .897 2 2v4c0 1.103-.897 2-2 2M8 14v4h16v-4z" stroke-width="1" stroke="currentColor"/><path fill="currentColor" d="M28 4H15.83l2.58-2.59L17 0l-5 5l5 5l1.41-1.41L15.83 6H28v18h2V6c0-1.102-.897-2-2-2" stroke-width="1" stroke="currentColor"/></svg>`,
         link: "https://example.com",
     },
 ]);

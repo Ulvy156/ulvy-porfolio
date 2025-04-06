@@ -71,7 +71,9 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title:"Skills & Tools"
+})
 const frontEndSkills = readonly([
   {
     name: 'Vue JS',

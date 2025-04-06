@@ -3,6 +3,7 @@
     <h1 class="text-2xl ml-10">Ulvy</h1>
     <div class="flex justify-evenly w-1/2">
       <a href="#git-in-touch">About</a>
+      <a href="#education">Educations</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
