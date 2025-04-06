@@ -1,0 +1,1 @@
+If you need reactive state, API calls, or Vue-specific features, use shared/.
