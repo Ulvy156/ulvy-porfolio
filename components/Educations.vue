@@ -5,7 +5,7 @@
     </div>
     <section class="text-white grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-10 ">
         <article v-for="edu in educations" :key="edu.schoolName" class="flex flex-col gap-5 border border-gray-600 p-3 rounded-md">
-            <NuxtImg class="m-auto object-center" :src="edu.img" width="500" height="300" />
+            <NuxtImg class="m-auto" :src="edu.img" width="500" height="300" />
             <div class="flex items-center gap-x-3">
               <span v-html="edu.svg"></span>
               <h1 class="text-2xl">{{edu.schoolType}}</h1>
