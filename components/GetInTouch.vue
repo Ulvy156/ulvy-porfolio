@@ -1,5 +1,5 @@
 <template>
-  <section class="text-white flex justify-between items-center">
+  <section id="git-in-touch" class="text-white flex justify-between items-center ">
     <div class="grid grid-cols-1 gap-5">
 
       <div>
@@ -18,9 +18,9 @@
         </div>
       </div>
     </div>
-    <div class=" lg:flex md:flex justify-center w-1/3 hidden ">
-      <!-- <img src="~/public/assets/profile.jpg" class="relative object-cover rounded-full" alt="profile picture"> -->
-      <img src="~/public/assets/programming.svg"  alt="profile picture">
+    <div class=" lg:flex md:flex justify-center w-1/3 hidden border-2 rounded-full">
+      <img src="~/public/assets/profile.jpg" class="relative object-cover rounded-full" alt="profile picture">
+      <!-- <img src="~/public/assets/programming.svg"  alt="profile picture"> -->
        <!-- <div v-html="profile"></div> -->
     </div>
   </section>

@@ -18,12 +18,12 @@
         <h1 class="text-3xl ">Ulvy</h1>
       </div>
     </template>
-    <ul class="grid grid-cols-1 gap-5" >
-      <li>About</li>
-      <li>Skills</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul>
+    <div class="grid grid-cols-1 gap-5 ">
+      <a href="#git-in-touch">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div> 
   </el-drawer>
 
 </template>

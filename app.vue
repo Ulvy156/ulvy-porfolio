@@ -14,8 +14,8 @@
 <script lang="ts" setup>
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
-const input = ref('')
-const value1 = ref(false) 
+
+
 </script>
 
 <style>
@@ -23,8 +23,10 @@ const value1 = ref(false)
 :root {
   --bg-color: linear-gradient(to right, #363636 0%, black 100%);
 }
-body {
+html {
   scroll-behavior: smooth;
+}
+body {
   background-image: var(--bg-color);
   font-family: "Winky Sans", sans-serif;
   font-optical-sizing: auto;

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="skills">
     <div class="flex justify-center items-center mt-10 mb-5">
       <h1 class="text-center text-3xl text-white border-style py-2">Skills & Tools</h1>
     </div>

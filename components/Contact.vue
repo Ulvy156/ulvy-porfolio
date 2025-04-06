@@ -1,5 +1,8 @@
 <template>
-    <section class="text-white grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
+    <section id="contact" class="text-white grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
+        <div class="flex justify-center items-center mt-10 mb-5 lg:col-span-2 md:col-span-2 ">
+            <h1 class="text-center text-3xl text-white border-style py-2">Contact Me</h1>
+        </div>
         <div class="grid grid-cols-1 gap-5">
             <div class="flex  gap-x-5">
                 <h1 class="text-3xl">Let's Build Something Cool Together!</h1>
@@ -143,5 +146,20 @@ function onSendMessage() {
 <style scoped>
 p {
     font-weight: lighter;
+}
+.border-style {
+  position: relative;
+  display: inline-block; /* or block, based on your layout */
+}
+
+.border-style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, white 0%, black 100%);
+  border-radius: 10px;
 }
 </style>
