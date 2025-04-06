@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <div class="flex justify-center items-center mt-10 mb-5">
-      <h1 class="text-center py-2 text-3xl text-white border-style ">Feature Projects</h1>
+      <h1 class="text-center py-2 text-3xl text-white border-style ">Projects Experienced</h1>
     </div>
     <!-- projects -->
      <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5 mt-10">
