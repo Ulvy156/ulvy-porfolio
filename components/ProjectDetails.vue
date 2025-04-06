@@ -1,50 +1,31 @@
 <template>
-  <section id="projects">
-    <div class="flex justify-center items-center mt-10 mb-5">
-      <h1 class="text-center py-2 text-3xl text-white border-style ">Projects Experienced</h1>
-    </div>
-    <!-- projects -->
-     <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5 mt-10">
-        <!-- project card -->
-        <div v-for="project in projects" :key="project.title"
-        class="grid  grid-cols-1 gap-5 border border-gray-600 p-3 text-white rounded-md">
-            <div class="bg-[#363636] h-40 w-full flex flex-col justify-center items-center text-center rounded-md gap-2 ">
-                <div v-html="project.svg">
-                </div>
-                <h3>{{project.title}}</h3>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <div class="flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-7 " viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M20 15c-1 1 1.25 3.75 0 5s-4-1-5 0s-1.5 3-3 3s-2-2-3-3s-3.75 1.25-5 0s1-4 0-5s-3-1.5-3-3s2-2 3-3s-1.25-3.75 0-5s4 1 5 0s1.5-3 3-3s2 2 3 3s3.75-1.25 5 0s-1 4 0 5s3 1.5 3 3s-2 2-3 3ZM7 12l3 3l7-7"/></svg>
-                    <h3>{{project.title}}</h3>
-                </div>
-                <p class="font-light">{{project.description}}</p>
-                <article class="flex flex-wrap gap-3">
-                    <p v-for="tag in project.tags" :key="tag"
-                    class="bg-[#575656] px-3 py-2 rounded-full w-fit flex justify-center items-center">{{ tag }}</p>
-                </article>
-            </div>
-            <NuxtLink :to="`/project-details/${project.id}`">
-                <div class="flex items-center gap-x-2">
-                    <p>View details</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z"/></svg>
-                </div>
-            </NuxtLink>
-        </div>
-     </section>
+  <section class="min-h-screen text-white flex flex-col items-center">
+    <!-- <div class="grid grid-cols-1 gap-5 w-1/2  " v-for="pro in matchedProjectID" :key="pro.id">
+      <div class="flex items-center justify-center gap-x-2 mt-5 w-fit">
+        <span v-html="pro.svg"></span>
+        <h1 class="text-3xl">{{pro.title}}</h1>
+      </div>
+      <div class="flex items-start justify-start">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.02 20q-1.666 0-3.12-.626T6.36 17.66t-1.714-2.54Q4.02 13.665 4.02 12q0-1.664.626-3.12T6.36 6.34T8.9 4.626T12.02 4q1.722 0 3.281.712q1.559.711 2.718 1.984V4.808q0-.213.144-.357t.357-.143t.356.143t.143.357v2.846q0 .343-.232.575t-.575.233h-2.846q-.213 0-.357-.145q-.143-.143-.143-.356t.143-.356t.357-.144h1.98q-1.044-1.15-2.41-1.805Q13.572 5 12.02 5Q9.094 5 7.057 7.038T5.019 12t2.038 4.963T12.019 19q2.472 0 4.375-1.55t2.447-3.934q.067-.228.228-.35q.162-.124.375-.093q.227.03.333.218t.044.409q-.571 2.764-2.746 4.532T12.019 20m.5-8.208l3 3q.14.14.15.344q.01.205-.15.364q-.16.16-.354.16t-.353-.16l-3.05-3.05q-.131-.13-.187-.274t-.056-.297V7.5q0-.213.144-.356Q11.807 7 12.02 7t.356.144t.143.356z"/></svg>
+        <p>Timeline: 3 months</p>
+      </div>
+    </div> -->
+    <h1 class="text-3xl mt-5">Comming soon...</h1>
   </section>
 </template>
 
 <script lang="ts" setup>
 useHead({
-  title:"Project Experienced",
-    meta: [
-        {
-        name: "description",
-        content: "Project experienced page for showcasing projects.",
-        },
-    ],
+  title: "Project Details",
+  meta: [
+    {
+      name: "description",
+      content: "Project details page for showcasing projects.",
+    },
+  ],
 })
+
+const projectID = useRoute().params.id;
 const projects = readonly([
     {
         id:'432fsd423',
@@ -87,23 +68,13 @@ const projects = readonly([
         link: "https://example.com",
     },
 ]);
+
+const matchedProjectID = computed(() => {
+  return projects.filter((project) => {
+    return project.id === projectID;
+  });
+})
+
 </script>
 
-<style scoped>
-.border-style {
-  position: relative;
-  display: inline-block; /* or block, based on your layout */
-}
-
-.border-style::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(to right, white 0%, black 100%);
-  border-radius: 10px;
-}
-
-</style>
+<style></style>
