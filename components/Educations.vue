@@ -3,7 +3,7 @@
     <div class="flex justify-center items-center mt-10 mb-5">
       <h1 class="text-center text-3xl text-white border-style py-2">Educations</h1>
     </div>
-    <section class="text-white grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-10 ">
+    <section class="text-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
         <article v-for="edu in educations" :key="edu.schoolName" class="flex flex-col gap-5 border border-gray-600 p-3 rounded-md">
             <NuxtImg class="m-auto" :src="edu.img" width="500" height="300" />
             <div class="flex items-center gap-x-3">
