@@ -83,7 +83,7 @@
                     </svg>
                 </template>
             </el-input>
-            <el-input v-model="message" type="textarea" style="width: 100%;" size="large" placeholder="Email">
+            <el-input v-model="message" type="textarea" style="width: 100%;" size="large" placeholder="Tell me what you have in mind!">
                 <template #prefix>
                     <svg xmlns="http://www.w3.org/2000/svg" class='size-5' viewBox="0 0 256 193">
                         <path fill="#4285f4"
