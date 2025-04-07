@@ -1,7 +1,8 @@
 <template>
     <section id="contact" class="text-white grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
-        <div class="flex justify-center items-center mt-10 mb-5 lg:col-span-2 md:col-span-2 ">
-            <h1 class="text-center text-3xl text-white border-style py-2">Contact Me</h1>
+        <div class="w-fit m-auto flex justify-center gap-x-2 items-center mt-10 mb-5 lg:col-span-2 md:col-span-2 border-b-3 border-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-9 text-white" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1792 896h-640V768h640zm-256 384h-384v-128h384zm512-1024v1536H0V256zm-128 128H128v1280h1792zM640 1152q-53 0-99 20t-82 55t-55 81t-20 100H256q0-52 14-101t39-93t62-80t83-62q-33-35-51-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-52 81q46 26 82 62t62 79t40 93t14 102H896q0-53-20-99t-55-82t-81-55t-100-20M512 896q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50"/></svg>
+            <h1 class="text-center text-3xl text-white py-2">Contact Me</h1>
         </div>
         <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 items-baseline col-span-2 gap-5">
             <div>
@@ -156,23 +157,3 @@ const socials = readonly([
 
 </script>
 
-<style scoped>
-p {
-    font-weight: lighter;
-}
-.border-style {
-  position: relative;
-  display: inline-block; /* or block, based on your layout */
-}
-
-.border-style::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(to right, white 0%, black 100%);
-  border-radius: 10px;
-}
-</style>
