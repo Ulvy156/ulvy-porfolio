@@ -10,5 +10,8 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  plugins:[
+    '~/plugins/aos.client.ts'
+  ]
   
 })

@@ -7,31 +7,33 @@
     <!-- projects -->
      <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5 mt-10">
         <!-- project card -->
-        <div v-for="project in projects" :key="project.title"
-        class="grid  grid-cols-1 gap-5 border border-gray-600 p-3 text-white rounded-md">
-            <div class="bg-[#363636] h-40 w-full flex flex-col justify-center items-center text-center rounded-md gap-2 ">
-                <div v-html="project.svg">
-                </div>
-                <h3>{{project.title}}</h3>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <div class="flex items-center gap-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-7 " viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M20 15c-1 1 1.25 3.75 0 5s-4-1-5 0s-1.5 3-3 3s-2-2-3-3s-3.75 1.25-5 0s1-4 0-5s-3-1.5-3-3s2-2 3-3s-1.25-3.75 0-5s4 1 5 0s1.5-3 3-3s2 2 3 3s3.75-1.25 5 0s-1 4 0 5s3 1.5 3 3s-2 2-3 3ZM7 12l3 3l7-7"/></svg>
-                    <h3>{{project.title}}</h3>
-                </div>
-                <p class="font-light">{{project.description}}</p>
-                <article class="flex flex-wrap gap-3">
-                    <p v-for="tag in project.tags" :key="tag"
-                    class="bg-[#575656] px-3 py-2 rounded-full w-fit flex justify-center items-center">{{ tag }}</p>
-                </article>
-            </div>
-            <NuxtLink :to="`/project-details/${project.id}`">
-                <div class="flex items-center gap-x-2">
-                    <p>View details</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z"/></svg>
-                </div>
-            </NuxtLink>
-        </div>
+         <ClientOnly >
+             <div v-for="project in projects" :key="project.title" data-aos="fade-up"
+             class="grid  grid-cols-1 gap-5 border border-gray-600 p-3 text-white rounded-md">
+                 <div class="bg-[#363636] h-40 w-full flex flex-col justify-center items-center text-center rounded-md gap-2 ">
+                     <div v-html="project.svg">
+                     </div>
+                     <h3>{{project.title}}</h3>
+                 </div>
+                 <div class="grid grid-cols-1 gap-5">
+                     <div class="flex items-center gap-x-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="size-7 " viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M20 15c-1 1 1.25 3.75 0 5s-4-1-5 0s-1.5 3-3 3s-2-2-3-3s-3.75 1.25-5 0s1-4 0-5s-3-1.5-3-3s2-2 3-3s-1.25-3.75 0-5s4 1 5 0s1.5-3 3-3s2 2 3 3s3.75-1.25 5 0s-1 4 0 5s3 1.5 3 3s-2 2-3 3ZM7 12l3 3l7-7"/></svg>
+                         <h3>{{project.title}}</h3>
+                     </div>
+                     <p class="font-light">{{project.description}}</p>
+                     <article class="flex flex-wrap gap-3">
+                         <p v-for="tag in project.tags" :key="tag"
+                         class="bg-[#575656] px-3 py-2 rounded-full w-fit flex justify-center items-center">{{ tag }}</p>
+                     </article>
+                 </div>
+                 <NuxtLink :to="`/project-details/${project.id}`">
+                     <div class="flex items-center gap-x-2">
+                         <p>View details</p>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z"/></svg>
+                     </div>
+                 </NuxtLink>
+             </div>
+         </ClientOnly>
      </section>
   </section>
 </template>

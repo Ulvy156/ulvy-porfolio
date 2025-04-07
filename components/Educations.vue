@@ -5,7 +5,8 @@
       <h1 class="text-center text-3xl text-white  py-2">Educations</h1>
     </div>
     <section class="text-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 ">
-        <article v-for="edu in educations" :key="edu.schoolName" class="flex flex-col gap-5 border border-gray-600 p-3 rounded-md">
+      <ClientOnly >
+        <article v-for="edu in educations" :key="edu.schoolName" class="flex flex-col gap-5 border border-gray-600 p-3 rounded-md" data-aos="fade-up">
             <NuxtImg class="m-auto" :src="edu.img" width="500" height="300" />
             <div class="flex items-center gap-x-3">
               <span v-html="edu.svg"></span>
@@ -14,6 +15,7 @@
             <h2 class="text-xl font-light">{{edu.schoolName}}</h2>
             <p class="font-light">{{ edu.graduated }}</p>
         </article>
+      </ClientOnly>
     </section>
   </section>
 </template>

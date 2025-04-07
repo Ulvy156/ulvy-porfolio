@@ -4,65 +4,67 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="size-9 text-white" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1792 896h-640V768h640zm-256 384h-384v-128h384zm512-1024v1536H0V256zm-128 128H128v1280h1792zM640 1152q-53 0-99 20t-82 55t-55 81t-20 100H256q0-52 14-101t39-93t62-80t83-62q-33-35-51-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-52 81q46 26 82 62t62 79t40 93t14 102H896q0-53-20-99t-55-82t-81-55t-100-20M512 896q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50"/></svg>
             <h1 class="text-center text-3xl text-white py-2">Contact Me</h1>
         </div>
-        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 items-baseline col-span-2 gap-5">
-            <div>
-                <div class="flex items-center gap-x-5">
-                    <h1 class="text-3xl">Let's Build Something Cool Together!</h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-9" viewBox="0 0 64 64">
-                        <path fill="#94989b"
-                            d="m20.9 50.9l30-30c3.5.8 7.3-.1 10-2.8s3.6-6.5 2.8-10L55 16.7l-6.1-1.6L47.3 9L56 .3c-3.5-.8-7.3.1-10 2.8s-3.6 6.5-2.8 10l-30 30c-3.5-.8-7.3.1-10 2.8C-1 50-1 56.8 3.1 60.9s10.9 4.1 15 0c2.7-2.7 3.6-6.5 2.8-10m-8.7 8.6l-6.1-1.6l-1.6-6.1L9 47.3l6.1 1.6l1.6 6.1z"
-                            stroke-width="1.5" stroke="#94989b" />
-                        <path fill="#3e4347" d="m28.8 21.9l-5.6 5.8l-5.5-5.7l5.5-5.8z" stroke-width="1.5"
-                            stroke="#3e4347" />
-                        <path fill="#94989b"
-                            d="M16.7 5.1L6.9 15.2c-.4.4-.4 1 0 1.3l3.7 3.8l3.7 3.8c.4.4.9.4 1.3 0L25.4 14c.4-.4.4-1 0-1.3L18 5.1c-.3-.4-.9-.4-1.3 0M.3 22c-.4.4-.4 1 0 1.3L7.6 31c.4.4.9.4 1.3 0c0 0 2-2.1 2.1-2.2l-8.6-8.9C2.3 19.9.3 22 .3 22"
-                            stroke-width="1.5" stroke="#94989b" />
-                        <path fill="#3e4347"
-                            d="m10.5 20.4l-3.7-3.8s1.2 2.1-2 2.5c-1.3.2-2.1.4-2.5.8l8.6 8.9c.4-.5.6-1.3.8-2.6c.4-3.3 2.4-2 2.4-2zM39.6 4.3C29.5-6 18.4 5.5 18.4 5.5l6.5 6.7s6.3-8.5 14.2-6.1c.9.3 1.7.7 2 .5c.4-.3-.8-1.6-1.5-2.3"
-                            stroke-width="1.5" stroke="#3e4347" />
-                        <path fill="#f2b200"
-                            d="m26 24.8l-3.6 3.7s1.9 3 5.1 6.3c3.5 3.6 8.2 5.7 12.9 10.5c7 7.2 12.8 15 14.9 17.9c.8 1.1.9 1 1.9 0l3-3.1z"
-                            stroke-width="1.5" stroke="#f2b200" />
-                        <path fill="#ffce31"
-                            d="m26 24.8l3.6-3.7s2.9 1.9 6.1 5.2c3.5 3.6 5.5 8.5 10.2 13.3c7 7.2 14.5 13.2 17.4 15.4c1.1.8 1 1 0 2l-3 3.1z"
-                            stroke-width="1.5" stroke="#ffce31" />
-                    </svg>
-                </div>
-                <div class="mt-5">
-                    <p>
-                        I'm always down to talk about new projects, collaborations, or just vibe about tech and design.
-                    </p>
-                    <p>Whatever it's full-stack systems, UI/UX, or back-end intergration - I got u.</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 gap-5">
-                <div class="flex gap-x-2 items-center mt-5 text-3xl">
-                    <p>Reach out me via socials media</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 48 48">
-                        <defs>
-                            <mask id="ipTHandDown0">
-                                <g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3">
-                                    <path fill="#555555" d="M7.053 10h22V4h-22z" />
-                                    <path
-                                        d="M29.053 10q9.78 10.684 11.222 12.384c1.443 1.7.837 3.62-2.775 3.62s-5.695-5.285-8.447-5.285q-.024-.004-.003 20.277a3 3 0 0 1-2.998 3.005h-.003a3.004 3.004 0 0 1-3.004-3.005v-8.01q-11.96-1.812-13.004-2c-1.044-.187-2.988-1.184-2.988-4.053V10z"
-                                        clip-rule="evenodd" />
-                                </g>
-                            </mask>
-                        </defs>
-                        <path fill="yellow" d="M0 0h48v48H0z" mask="url(#ipTHandDown0)" />
-                    </svg>
-                </div>
+        <ClientOnly >
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 items-baseline col-span-2 gap-5" data-aos="fade-up">
                 <div>
-                    
+                    <div class="flex items-center gap-x-5">
+                        <h1 class="text-3xl">Let's Build Something Cool Together!</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-9" viewBox="0 0 64 64">
+                            <path fill="#94989b"
+                                d="m20.9 50.9l30-30c3.5.8 7.3-.1 10-2.8s3.6-6.5 2.8-10L55 16.7l-6.1-1.6L47.3 9L56 .3c-3.5-.8-7.3.1-10 2.8s-3.6 6.5-2.8 10l-30 30c-3.5-.8-7.3.1-10 2.8C-1 50-1 56.8 3.1 60.9s10.9 4.1 15 0c2.7-2.7 3.6-6.5 2.8-10m-8.7 8.6l-6.1-1.6l-1.6-6.1L9 47.3l6.1 1.6l1.6 6.1z"
+                                stroke-width="1.5" stroke="#94989b" />
+                            <path fill="#3e4347" d="m28.8 21.9l-5.6 5.8l-5.5-5.7l5.5-5.8z" stroke-width="1.5"
+                                stroke="#3e4347" />
+                            <path fill="#94989b"
+                                d="M16.7 5.1L6.9 15.2c-.4.4-.4 1 0 1.3l3.7 3.8l3.7 3.8c.4.4.9.4 1.3 0L25.4 14c.4-.4.4-1 0-1.3L18 5.1c-.3-.4-.9-.4-1.3 0M.3 22c-.4.4-.4 1 0 1.3L7.6 31c.4.4.9.4 1.3 0c0 0 2-2.1 2.1-2.2l-8.6-8.9C2.3 19.9.3 22 .3 22"
+                                stroke-width="1.5" stroke="#94989b" />
+                            <path fill="#3e4347"
+                                d="m10.5 20.4l-3.7-3.8s1.2 2.1-2 2.5c-1.3.2-2.1.4-2.5.8l8.6 8.9c.4-.5.6-1.3.8-2.6c.4-3.3 2.4-2 2.4-2zM39.6 4.3C29.5-6 18.4 5.5 18.4 5.5l6.5 6.7s6.3-8.5 14.2-6.1c.9.3 1.7.7 2 .5c.4-.3-.8-1.6-1.5-2.3"
+                                stroke-width="1.5" stroke="#3e4347" />
+                            <path fill="#f2b200"
+                                d="m26 24.8l-3.6 3.7s1.9 3 5.1 6.3c3.5 3.6 8.2 5.7 12.9 10.5c7 7.2 12.8 15 14.9 17.9c.8 1.1.9 1 1.9 0l3-3.1z"
+                                stroke-width="1.5" stroke="#f2b200" />
+                            <path fill="#ffce31"
+                                d="m26 24.8l3.6-3.7s2.9 1.9 6.1 5.2c3.5 3.6 5.5 8.5 10.2 13.3c7 7.2 14.5 13.2 17.4 15.4c1.1.8 1 1 0 2l-3 3.1z"
+                                stroke-width="1.5" stroke="#ffce31" />
+                        </svg>
+                    </div>
+                    <div class="mt-5">
+                        <p>
+                            I'm always down to talk about new projects, collaborations, or just vibe about tech and design.
+                        </p>
+                        <p>Whatever it's full-stack systems, UI/UX, or back-end intergration - I got u.</p>
+                    </div>
                 </div>
-                <div class="flex flex-wrap justify-between gap-5">
-                    <div v-for="social in socials" :key="social.name" class="flex items-center w-fit gap-x-2">
-                        <span v-html="social.svg"></span>
-                        <a target="_blank" :href="social.url" class="text-lg">{{ social.name }}</a>
+                <div class="grid grid-cols-1 gap-5">
+                    <div class="flex gap-x-2 items-center mt-5 text-3xl">
+                        <p>Reach out me via socials media</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 48 48">
+                            <defs>
+                                <mask id="ipTHandDown0">
+                                    <g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3">
+                                        <path fill="#555555" d="M7.053 10h22V4h-22z" />
+                                        <path
+                                            d="M29.053 10q9.78 10.684 11.222 12.384c1.443 1.7.837 3.62-2.775 3.62s-5.695-5.285-8.447-5.285q-.024-.004-.003 20.277a3 3 0 0 1-2.998 3.005h-.003a3.004 3.004 0 0 1-3.004-3.005v-8.01q-11.96-1.812-13.004-2c-1.044-.187-2.988-1.184-2.988-4.053V10z"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </mask>
+                            </defs>
+                            <path fill="yellow" d="M0 0h48v48H0z" mask="url(#ipTHandDown0)" />
+                        </svg>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="flex flex-wrap justify-between gap-5">
+                        <div v-for="social in socials" :key="social.name" class="flex items-center w-fit gap-x-2">
+                            <span v-html="social.svg"></span>
+                            <a target="_blank" :href="social.url" class="text-lg">{{ social.name }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </ClientOnly>
         <!-- <form class="flex flex-col gap-5 font-light p-5 border rounded-md border-gray-800">
             <el-input v-model="inputValue" style="width: 100%" size="large" placeholder="What's your name ?">
                 <template #prefix>

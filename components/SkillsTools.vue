@@ -1,12 +1,12 @@
 <template>
   <section id="skills">
-    <div class="w-fit  m-auto flex justify-center gap-x-2 items-center mt-10 mb-5 border-b-3 border-white ">
+    <div class="flex justify-center items-center mt-10 mb-5">
       <svg xmlns="http://www.w3.org/2000/svg" class="size-10 text-white" viewBox="0 0 100 100"><path fill="none" d="M32.092 55.916h14.575c1.087 0 2.563 2.496 4.734 4.039v-1.776s-.07-1.053.348-1.69c.424-.639 1.308-.809 1.584-.809h14.575s4.401-.74 9.294-3.044l-53.794.514c4.642 2.082 8.684 2.766 8.684 2.766"/><path fill="currentColor" d="M16.868 55.111a25 25 0 0 1-1.061-.855c.247.396.609.703 1.061.855m2.67-39.55h60.708v35.516c2.128-1.18 3.271-1.984 4.054-2.499v-35.05a2.03 2.03 0 0 0-2.03-2.028H17.508c-1.123 0-2.033.91-2.033 2.028v35.14c.771.486 1.878 1.301 4.063 2.52z" stroke-width="2.5" stroke="currentColor"/><path fill="currentColor" d="M87.791 47.978c-.523-.417-1.247-.415-2.396 0c-.335.122-.674.325-1.095.6c-.783.515-1.925 1.319-4.054 2.499c-.657.36-1.373.748-2.241 1.183c-.272.136-.534.247-.803.377c-4.893 2.304-9.294 3.044-9.294 3.044H53.333c-.276 0-1.16.17-1.584.809c-.418.638-.348 1.69-.348 1.69v1.776c.526.373 1.082.707 1.695.918c4.394 1.498 7.367.192 8.664-1.628c1.517-2.134 2.289-3.329 3.955-2.705s0 4.68-2.08 6.763c-2.085 2.084-4.584 3.749-8.12 3.749c-1.486 0-2.926-.223-4.114-.476v15.131c0 4.27 4.538 6.552 7.658 6.552s9.367-1.768 12.387-9.263c3.017-7.493-.205-17.381-.205-17.381s4.888-2.191 9.991-5.414c5.098-3.225 6.455-6.246 6.559-6.67c.1-.427.516-1.136 0-1.554" stroke-width="2.5" stroke="currentColor"/><path fill="currentColor" d="M63.635 63.303c2.08-2.083 3.746-6.139 2.08-6.763s-2.438.571-3.955 2.705c-1.297 1.82-4.27 3.126-8.664 1.628c-.613-.211-1.169-.545-1.695-.918c-2.17-1.543-3.647-4.039-4.734-4.039H32.092s-4.043-.684-8.684-2.766c-.466-.21-.935-.418-1.411-.657a59 59 0 0 1-2.459-1.306c-2.185-1.219-3.292-2.033-4.063-2.52c-.321-.203-.593-.355-.871-.455c-1.144-.416-1.873-.416-2.394 0c-.518.418-.104 1.128 0 1.553c.08.325.913 2.184 3.596 4.49a26 26 0 0 0 2.963 2.181c5.098 3.227 9.991 5.412 9.991 5.412s-3.227 9.886-.205 17.381c3.018 7.494 9.263 9.27 12.385 9.27c3.123 0 7.661-2.297 7.661-6.564V65.804s1.152.42 2.799.771c1.188.253 2.628.476 4.114.476c3.537.001 6.036-1.664 8.121-3.748m-2.618-28.922a9.06 9.06 0 0 0-9.058 9.057c0 4.999 4.055 9.056 9.058 9.056c4.998 0 9.052-4.057 9.052-9.056c0-5-4.054-9.057-9.052-9.057" stroke-width="2.5" stroke="currentColor"/><path fill="currentColor" d="M39.544 34.381c-5 0-9.053 4.057-9.053 9.057c0 4.999 4.052 9.056 9.053 9.056c5.003 0 9.058-4.057 9.058-9.056c0-5-4.055-9.057-9.058-9.057" stroke-width="2.5" stroke="currentColor"/></svg>
-      <h1 class="text-center text-3xl text-white py-2">Skills & Tools</h1>
+      <h1 class="text-center text-3xl text-white border-style py-2">Skills & Tools</h1>
     </div>
     <section class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 md:gap-14 gap-10 lg:gap-10 mt-10">
       <!-- front-end section -->
-      <div>
+      <div >
         <div class="flex items-center gap-x-2 text-2xl text-white mb-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
@@ -15,15 +15,17 @@
           <h2>Front-End</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-1 grid-cols-2 gap-5">
-          <div v-for="skill in frontEndSkills" :key="skill.name"
-            class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
-            <div v-html="skill.icon"></div>
-            <h3>{{ skill.name }}</h3>
-          </div>
+          <ClientOnly >
+            <div v-for="skill in frontEndSkills" :key="skill.name" data-aos="fade-up"
+              class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
+              <div v-html="skill.icon"></div>
+              <h3>{{ skill.name }}</h3>
+            </div>
+          </ClientOnly>
         </div>
       </div>
       <!-- back-end section -->
-      <div>
+      <div  >
         <div class="flex items-center gap-x-2 text-2xl text-white mb-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
@@ -32,39 +34,46 @@
           <h2>Back-End</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-1 grid-cols-2 gap-5">
-          <div v-for="skill in backEndSkills" :key="skill.name"
-            class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
-            <div v-html="skill.icon"></div>
-            <h3>{{ skill.name }}</h3>
-          </div>
+          <ClientOnly >
+            <div v-for="skill in backEndSkills" :key="skill.name" data-aos="fade-up"
+              class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
+              <div v-html="skill.icon"></div>
+              <h3>{{ skill.name }}</h3>
+            </div>
+          </ClientOnly>
         </div>
       </div>
       <!-- database section -->
-      <div>
+      <div  >
         <div class="flex items-center gap-x-2 text-2xl text-white mb-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="size-9" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20q-3.506 0-5.753-.893T4 16.807V7q0-1.246 2.34-2.123T12 4t5.66.877T20 7v9.808q0 1.405-2.247 2.299T12 20m0-11.11q2.148 0 4.33-.599q2.184-.599 2.612-1.305q-.41-.744-2.57-1.365T12 5q-2.179 0-4.366.599t-2.615 1.31q.408.75 2.576 1.366T12 8.891m0 5.032q1.03 0 2.025-.1t1.901-.297t1.685-.491T19 12.37V8.275q-.611.37-1.39.664q-.777.294-1.684.49q-.907.198-1.901.298t-2.025.1q-1.07 0-2.079-.11t-1.906-.306t-1.663-.482T5 8.275v4.096q.587.37 1.352.654t1.663.482q.896.197 1.906.307t2.079.109M12 19q1.285 0 2.443-.146t2.082-.414t1.57-.641t.905-.805v-3.623q-.611.37-1.39.664q-.777.294-1.684.491t-1.901.297t-2.025.1q-1.07 0-2.079-.11t-1.906-.306t-1.663-.482q-.766-.284-1.352-.654V17q.26.452.903.812t1.566.627t2.085.415T12 19"/></svg>
           <h2>Database</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-1 grid-cols-2 gap-5">
-          <div v-for="skill in dataBaseSkills" :key="skill.name"
-            class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
-            <div v-html="skill.icon"></div>
-            <h3>{{ skill.name }}</h3>
-          </div>
+          <ClientOnly >
+            <div v-for="skill in dataBaseSkills" :key="skill.name" data-aos="fade-up"
+              class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
+              <div v-html="skill.icon"></div>
+              <h3>{{ skill.name }}</h3>
+            </div>
+          </ClientOnly>
         </div>
       </div>
       <!-- tools section -->
-      <div>
+      <div  >
         <div class="flex items-center gap-x-2 text-2xl text-white mb-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="size-9" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.948 1.5h12.104c.899 0 1.648 0 2.242.08c.628.084 1.195.27 1.65.725c.456.456.642 1.023.726 1.65c.08.595.08 1.345.08 2.243v.104c0 .898 0 1.648-.08 2.242c-.084.628-.27 1.195-.726 1.65c-.455.456-1.022.642-1.65.726c-.594.08-1.343.08-2.242.08H5.948c-.898 0-1.648 0-2.242-.08c-.628-.084-1.195-.27-1.65-.726c-.456-.455-.642-1.022-.726-1.65c-.08-.594-.08-1.344-.08-2.242v-.104c0-.898 0-1.648.08-2.242c.084-.628.27-1.195.725-1.65c.456-.456 1.023-.642 1.65-.726C4.3 1.5 5.05 1.5 5.949 1.5M3.905 3.067c-.461.062-.659.169-.789.3s-.237.327-.3.788c-.064.483-.066 1.131-.066 2.095s.002 1.612.067 2.095c.062.461.169.659.3.789s.327.237.788.3C4.388 9.497 5.036 9.5 6 9.5h12c.964 0 1.612-.002 2.095-.067c.461-.062.659-.169.789-.3s.237-.327.3-.788c.064-.483.066-1.131.066-2.095s-.002-1.612-.067-2.095c-.062-.461-.169-.659-.3-.789s-.327-.237-.788-.3C19.612 3.003 18.964 3 18 3H6c-.964 0-1.612.002-2.095.067M5.25 6.25A.75.75 0 0 1 6 5.5h2A.75.75 0 1 1 8 7H6a.75.75 0 0 1-.75-.75m5 0A.75.75 0 0 1 11 5.5h7A.75.75 0 0 1 18 7h-7a.75.75 0 0 1-.75-.75M5.948 12.5h12.104c.899 0 1.648 0 2.242.08c.628.084 1.195.27 1.65.726c.456.455.642 1.022.726 1.65c.08.594.08 1.343.08 2.242v.104c0 .899 0 1.648-.08 2.242c-.084.628-.27 1.195-.726 1.65c-.455.456-1.022.642-1.65.726c-.594.08-1.343.08-2.242.08H5.948c-.898 0-1.648 0-2.242-.08c-.628-.084-1.195-.27-1.65-.726c-.456-.455-.642-1.022-.726-1.65c-.08-.594-.08-1.343-.08-2.242v-.104c0-.899 0-1.648.08-2.242c.084-.628.27-1.195.725-1.65c.456-.456 1.023-.642 1.65-.726c.595-.08 1.345-.08 2.243-.08m-2.043 1.566c-.461.063-.659.17-.789.3s-.237.328-.3.79c-.064.482-.066 1.13-.066 2.094s.002 1.612.067 2.095c.062.461.169.659.3.789s.327.237.788.3c.483.064 1.131.066 2.095.066h12c.964 0 1.612-.002 2.095-.067c.461-.062.659-.169.789-.3s.237-.327.3-.788c.064-.483.066-1.131.066-2.095s-.002-1.612-.067-2.095c-.062-.461-.169-.659-.3-.789s-.327-.237-.788-.3C19.612 14.003 18.964 14 18 14H6c-.964 0-1.612.002-2.095.066M5.25 17.25A.75.75 0 0 1 6 16.5h2A.75.75 0 0 1 8 18H6a.75.75 0 0 1-.75-.75m5 0a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/></svg>
           <h2>Tools & Deployment</h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-1 grid-cols-2 gap-5">
-          <div v-for="skill in toolsSkills" :key="skill.name"
-            class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
-            <div v-html="skill.icon"></div>
-            <h3>{{ skill.name }}</h3>
-          </div>
+
+          <ClientOnly >
+            <div v-for="skill in toolsSkills" :key="skill.name" data-aos="fade-up"
+              class="flex items-center gap-x-2 text-white border w-fit rounded-full p-2">
+              <div v-html="skill.icon"></div>
+              <h3>{{ skill.name }}</h3>
+            </div>
+          </ClientOnly>
         </div>
       </div>
     </section>
@@ -161,3 +170,21 @@ const toolsSkills = readonly([
 </script>
 
 
+<style scoped>
+.border-style {
+  position: relative;
+  display: inline-block; /* or block, based on your layout */
+}
+
+.border-style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, white 0%, black 100%);
+  border-radius: 10px;
+}
+
+</style>
