@@ -10,6 +10,12 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  title: 'Ulvy Portfolio',
+  meta: [
+    { name: 'description', content: 'I specialize in buidling internal systems that actually work fast, secure, and clean, I handle everything from front-end interfaces in Vue 3+ + Tailwind to backend logic with Laravel and Nest JS.' },
+  ]
+})
 import GetInTouch from '~/components/GetInTouch.vue';
 import Introduct from '~/components/Introduct.vue';
 import SkillsTools from '~/components/SkillsTools.vue';

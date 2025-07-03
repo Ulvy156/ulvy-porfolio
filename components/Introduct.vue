@@ -22,5 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title:"Introduction",
+})
 </script>
