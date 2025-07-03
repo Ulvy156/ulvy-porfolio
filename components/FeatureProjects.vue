@@ -39,15 +39,6 @@
 </template>
 
 <script lang="ts" setup>
-useHead({
-  title:"Project Experienced",
-    meta: [
-        {
-        name: "description",
-        content: "Project experienced page for showcasing projects.",
-        },
-    ],
-})
 const projects = readonly([
     {
         id:'432fsd423',

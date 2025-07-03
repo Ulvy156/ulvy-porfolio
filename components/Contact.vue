@@ -127,9 +127,6 @@
 </template>
 
 <script lang="ts" setup>
-useHead({
-  title:"Contact"
-})
 // const inputValue = ref<string>('')
 // const message = ref<string>("")
 

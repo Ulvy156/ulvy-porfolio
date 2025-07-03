@@ -15,15 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-useHead({
-  title: "Project Details",
-  meta: [
-    {
-      name: "description",
-      content: "Project details page for showcasing projects.",
-    },
-  ],
-})
+
 
 const projectID = useRoute().params.id;
 const projects = readonly([

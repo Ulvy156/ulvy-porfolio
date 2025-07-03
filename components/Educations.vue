@@ -21,9 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-useHead({
-  title:"Educations"
-})
+
 
 const educations = readonly([
   {
