@@ -26,21 +26,36 @@
                          class="bg-[#575656] px-3 py-2 rounded-full w-fit flex justify-center items-center">{{ tag }}</p>
                      </article>
                  </div>
-                 <NuxtLink :to="`/project-details/${project.id}`">
-                     <div class="flex items-center gap-x-2">
-                         <p>View details</p>
-                         <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z"/></svg>
-                     </div>
-                 </NuxtLink>
+                 <div @click="openDialog" 
+                    class="flex items-center gap-x-2 cursor-pointer">
+                     <p>View details</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z"/></svg>
+                 </div>
              </div>
          </ClientOnly>
      </section>
   </section>
+  <component
+  ref="dialogRef"
+  v-if="toggleDialog"
+  :is="EL_Dialog"
+  />
 </template>
 
 <script lang="ts" setup>
 import projectContent from '~/content/project.content';
 
+//components
+const EL_Dialog = defineAsyncComponent(() => import('~/composables/el-dialog.vue'));
+
+//properties
+const toggleDialog = ref(false);
+const dialogRef = ref();
+//methods
+function openDialog() {
+  toggleDialog.value = true;
+  dialogRef.value.openModel();
+}
 </script>
 
 <style scoped>
