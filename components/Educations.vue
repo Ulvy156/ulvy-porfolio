@@ -25,3 +25,10 @@ import educationsContent from '~/content/educations.content';
 
 </script>
 
+<style scoped>
+
+#education {
+  scroll-margin-top: 5%;
+}
+
+</style>

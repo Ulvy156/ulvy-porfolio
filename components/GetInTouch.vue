@@ -31,6 +31,9 @@
 </script>
 
 <style scoped>
+#git-in-touch{
+  scroll-padding-top: 30px;
+}
 .custom-loader {
   width: 25px;
   height: 25px;
